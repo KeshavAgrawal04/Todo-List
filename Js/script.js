@@ -3,12 +3,12 @@ let finishCounter;
 function finish() {
     finishCounter = false;
     var path = document.getElementById("right").getAttribute("src");
-    if (path == "../images/correct-black.png") {
+    if (path.search("green") != -1) {
         finishCounter = true;
-        document.getElementById("right").src = "../images/correct-green.png";
+        document.getElementById("right").src = "images/correct-green.png";
     } else {
         finishCounter = false;
-        document.getElementById("right").src = "../images/correct-black.png";
+        document.getElementById("right").src = "images/correct-black.png";
     }
 }
 
