@@ -13,13 +13,13 @@ function finish() {
 }
 
 function finish1() {
-    finishCounter1 = false;
+    finishCounter = false;
     var path = document.getElementById("right").getAttribute("src");
     if (path == "../Images/correct-black.png") {
-        finishCounter1 = true;
+        finishCounter = true;
         document.getElementById("right").src = "../Images/correct-green.png";
     } else {
-        finishCounter1 = false;
+        finishCounter = false;
         document.getElementById("right").src = "../Images/correct-black.png";
     }
 }
