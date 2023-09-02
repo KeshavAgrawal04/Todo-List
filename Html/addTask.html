@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST || ADD TASK</title>
+    <link rel="stylesheet" href="../Css/style1.css">
+    <script src="../Js/script.js"></script>
+    <link rel="shortcut icon" href="../Images/check.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="heading">
+        <h1>TODO <span style="color:#0f64a3">LIST</span></h1>
+    </div>
+        <div class="add-title">
+            <h3>TITLE</h3>
+            <input type="text" id="title" placeholder="TODO TITLE" required>
+        </div>
+        <br>
+        <div class="add-desc">
+            <h3>DESCRIPTION</h3>
+            <textarea id="description" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="finish">
+            <h3>FINISH</h3>
+            <div><img src="../Images/correct-black.png" alt="img" onclick="finish()" id="right"></div>
+        </div>
+        <div class="btn" id="update-btn" onclick="addData()">
+            ADD 
+        </div>
+        <div class="btn" id="delete-btn" onclick="deleteData()" style="background-color: #d93d3d;">
+            BACK 
+        </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.todo-tasks {
+    display: flex;
+    width: 100%;
+    height: 440px;
+    overflow: auto;
+    margin: auto;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+}
+
+.todo-tasks .task {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+
+.todo-tasks .task .title-disc {
+    background: transparent;
+}
+
+.todo-tasks .task .title-disc p {
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 380px;
+    height: 80%;
+}
+
+.todo-tasks .task .title-disc h3 {
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    width: 380px;
+    background: transparent;
+    font-size: 20px;
+}
+
+.todo-tasks .task .title-disc button {
+    border-radius: 5px;
+    width: 80%;
+    background-color: #2d77af;
+    border: none;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+}
+
+.todo-tasks .task .title-disc .tick {
+    position: relative;
+    top: 10px;
+}

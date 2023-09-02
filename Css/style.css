@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap');
+
+* {
+    background-color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    padding: 10px;
+}
+
+.todo-tasks {
+    display: flex;
+    width: 400px;
+    height: 440px;
+    overflow: auto;
+    margin: auto;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.todo-tasks::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-tasks .task {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+
+.todo-tasks .task img {
+    background: transparent;
+}
+
+.todo-tasks .task .title-disc {
+    line-height: 20px;
+    height: 80%;
+    background: transparent;
+}
+
+.todo-tasks .task .title-disc p {
+    overflow: hidden;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    line-height: 16px;
+    width: 250px;
+    height: 60%;
+}
+
+.todo-tasks .task .title-disc h3 {
+    overflow: hidden;
+    color: black;
+    background: transparent;
+    font-size: 20px;
+}
+
+.todo-tasks .task button {
+    height: 60%;
+    border-radius: 5px;
+    background-color: #2d77af;
+    border: none;
+    width: 80px;
+    color: white;
+    cursor: pointer;
+}
+
+.view-all {
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.view-all a {
+    color: #ffff;
+    font-size: 20px;
+}
+
+.add-todo {
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #2d77af;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 20px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.add-todo img {
+    background-color: #2d77af;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST || HOME</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="shortcut icon" href="Images/check.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>TODO <span style="color:#0f64a3">LIST</span></h1>
+    </div>
+
+    <div class="todo-tasks" id="todoTasks">
+        <script>
+            let length = localStorage.length;
+            for (i = 0; i < length; i++) {
+                // alert(i);
+                document.getElementById("todoTasks")
+                    .innerHTML += `<div class="task">
+                    <img src="" alt="image" class="tick">
+                    <div class="title-disc">
+                        <h3 class="title-label"></h3>
+                        <p class="description-label"></p>
+                        </div>
+                        </div>`;
+            }
+        </script>
+        <script src="Js/script.js"></script>
+    </div>
+    <div class="view-all">
+        <a href="Html/viewAll.html">View All</a>
+    </div>
+    <div class="add-todo" onclick="window.location.href = 'Html/addTask.html'">
+        Add Todo
+        <img src="Images/draw.png" alt="img">
+    </div>
+    <div class="view-all" style="width: 300px;text-align: center;" onclick="localStorage.clear();">
+        <a href="index.html">Click Here To Reset TODO</a>
+    </div>
+</body>
+
+</html>
