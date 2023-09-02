@@ -3,7 +3,7 @@ let finishCounter;
 function finish() {
     finishCounter = false;
     var path = document.getElementById("right").getAttribute("src");
-    if (path.search("green") != -1) {
+    if (path == "Images/correct-black.png") {
         finishCounter = true;
         document.getElementById("right").src = "Images/correct-green.png";
     } else {
