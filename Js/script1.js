@@ -11,9 +11,9 @@ window.addEventListener("load", (event) => {
         document.getElementsByClassName("btn")[i].setAttribute("id",key);
 
         if (todo.Finish == true) {
-            document.getElementsByClassName("tick")[i].src = "../images/correct-green.png";
+            document.getElementsByClassName("tick")[i].src = "../Images/correct-green.png";
         } else {
-            document.getElementsByClassName("tick")[i].src = "../images/correct-black.png";
+            document.getElementsByClassName("tick")[i].src = "../Images/correct-black.png";
         }
     }
 });

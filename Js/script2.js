@@ -4,9 +4,9 @@ document.getElementById("title").value = item.Title;
 document.getElementById("description").value = item.Description;
 
 if (item.Finish == true) {
-    document.getElementById("right").src = "../images/correct-green.png";
+    document.getElementById("right").src = "../Images/correct-green.png";
 } else {
-    document.getElementById("right").src = "../images/correct-black.png";
+    document.getElementById("right").src = "../Images/correct-black.png";
 }
 
 let finishCounter1;
@@ -14,12 +14,12 @@ let finishCounter1;
 function finish() {
     finishCounter1 = false;
     var path = document.getElementById("right").getAttribute("src");
-    if (path == "../images/correct-black.png") {
+    if (path == "../Images/correct-black.png") {
         finishCounter1 = true;
-        document.getElementById("right").src = "../images/correct-green.png";
+        document.getElementById("right").src = "../Images/correct-green.png";
     } else {
         finishCounter1 = false;
-        document.getElementById("right").src = "../images/correct-black.png";
+        document.getElementById("right").src = "../Images/correct-black.png";
     }
 }
 

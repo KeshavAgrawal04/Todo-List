@@ -5,10 +5,10 @@ function finish() {
     var path = document.getElementById("right").getAttribute("src");
     if (path.search("green") != -1) {
         finishCounter = true;
-        document.getElementById("right").src = "images/correct-green.png";
+        document.getElementById("right").src = "Images/correct-green.png";
     } else {
         finishCounter = false;
-        document.getElementById("right").src = "images/correct-black.png";
+        document.getElementById("right").src = "Images/correct-black.png";
     }
 }
 
@@ -63,9 +63,9 @@ window.addEventListener("load", (event) => {
         document.getElementsByClassName("description-label")[j].innerHTML = todo.Description;
 
         if (todo.Finish == true) {
-            document.getElementsByClassName("tick")[j].src = "images/correct-green.png";
+            document.getElementsByClassName("tick")[j].src = "Images/correct-green.png";
         } else {
-            document.getElementsByClassName("tick")[j].src = "images/correct-black.png";
+            document.getElementsByClassName("tick")[j].src = "Images/correct-black.png";
         }
         j++;
     }
