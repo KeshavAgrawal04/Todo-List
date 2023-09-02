@@ -52,7 +52,6 @@ function addData() {
             }
         }
 
-        alert(maxKey);
         maxKey++;
 
         localStorage.setItem(maxKey, obj);
