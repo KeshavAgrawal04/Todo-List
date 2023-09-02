@@ -12,6 +12,18 @@ function finish() {
     }
 }
 
+function finish1() {
+    finishCounter1 = false;
+    var path = document.getElementById("right").getAttribute("src");
+    if (path == "../Images/correct-black.png") {
+        finishCounter1 = true;
+        document.getElementById("right").src = "../Images/correct-green.png";
+    } else {
+        finishCounter1 = false;
+        document.getElementById("right").src = "../Images/correct-black.png";
+    }
+}
+
 function addData() {
     if (document.getElementById("title").value == "" && document.getElementById("description").value == "") {
     } else {
