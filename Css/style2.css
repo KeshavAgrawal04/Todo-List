@@ -61,3 +61,10 @@
     position: relative;
     top: 10px;
 }
+
+.copy {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto;
+}
