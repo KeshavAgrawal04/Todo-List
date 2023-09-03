@@ -108,3 +108,8 @@
 .add-todo img {
     background-color: #2d77af;
 }
+
+.copy {
+    color: white;
+    margin: auto;
+}
