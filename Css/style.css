@@ -110,6 +110,8 @@
 }
 
 .copy {
+    display: flex;
+    justify-content: center;
     color: white;
     margin: auto;
 }
